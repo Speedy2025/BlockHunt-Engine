@@ -1,0 +1,3 @@
+#No documentation req
+tellraw @a ["",{"text":"Block Hunt","color":"green"},{"text":">> ","color":"dark_gray"},{"selector":"@s","color":"gold","bold":true},{"text":" was eliminated by "},{"selector":"@a[tag=bh.nohit,limit=1]","color":"gold","bold":true}]
+summon firework_rocket ~ ~ ~ {LifeTime:10,FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type: 0b, Colors: [I; 11743532, 2651799, 15790320], FadeColors: [I; 1973019]}]}}}}
