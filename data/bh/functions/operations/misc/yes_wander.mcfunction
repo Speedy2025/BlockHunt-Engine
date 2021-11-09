@@ -14,6 +14,4 @@
 # Description:
 #   Allows the player to wander
 tag @s add bh.wanderer
-playsound minecraft:block.note_block.harp master @s ~ ~ ~ 10 1.5 0
-title @s times 0 3 1
-title @s actionbar [{"text":"You're now wandering","color":"green"}]
+function #bh:msg/hider/start_wandering

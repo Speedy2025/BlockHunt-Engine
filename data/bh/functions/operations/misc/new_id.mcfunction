@@ -21,3 +21,4 @@ scoreboard players add #id bh.id 1
 scoreboard players operation @s bh.id = #id bh.id
 scoreboard players set @s bh.cooldown 0
 scoreboard players set @s bh.exposed 0
+scoreboard players set @s bh.blinded 0

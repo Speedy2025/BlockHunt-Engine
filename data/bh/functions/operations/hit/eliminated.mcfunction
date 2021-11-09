@@ -28,7 +28,7 @@ scoreboard players reset @s bh.multi
 effect clear @s
 
 #Notify everyone
-function #bh:msg/hider_eliminated
+function #bh:msg/hider/eliminated
 
 # Initiate Player
 execute if score #config.switch_teams bh.multi matches 1 run function #bh:init/seeker

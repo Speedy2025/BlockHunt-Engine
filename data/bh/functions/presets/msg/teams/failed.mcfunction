@@ -1,0 +1,1 @@
+tellraw @a[tag=bh.ready] ["",{"text":"Block Hunt","color":"green"},{"text":">> ","color":"dark_gray"},{"text":"There are not enough people to start a match. Minimum required: "},{"score":{"name":"#expected_players","objective":"bh.multi"},"color":"gold","bold":true}]

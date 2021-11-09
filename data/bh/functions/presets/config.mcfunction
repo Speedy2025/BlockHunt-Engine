@@ -36,6 +36,11 @@ scoreboard players set #config.match_timer bh.multi 12000
 scoreboard players set #config.align_timer_min bh.multi 50
 scoreboard players set #config.align_timer_max bh.multi 100
 
+#- Seeker Blindfolded Time
+# 600* - 30 Seconds
+# <#> - Custom Blindfold Time
+scoreboard players set #config.seeker_blindfold bh.multi 600
+
 #- Max Seeker Hit Range, in 0.2 block steps
 # 41* - 8 blocks
 # <#> - Custom Range (Add 1 for good measure)
@@ -52,9 +57,9 @@ scoreboard players set #config.hider_range bh.multi 21
 scoreboard players set #config.hider_health bh.multi 1
 
 #- Force Control of Teams
-# 0* - Do not assign teams, assumes already handled w/ bh.seeker and bh.hider
-# 1  - Auto-Assign people to teams with tag bh.ready
-scoreboard players set #config.force_teams bh.multi 0
+# 0 - Do not assign teams, assumes already handled w/ bh.seeker and bh.hider
+# 1*  - Auto-Assign people to teams with tag bh.ready
+scoreboard players set #config.force_teams bh.multi 1
 
 #- If Force Control - Number of Seekers
 # 2* - Two Seekers
@@ -68,3 +73,10 @@ scoreboard players set #config.force_seekers bh.multi 2
 # 0* - No Limits (recommended)
 # <#> - <#> Hiders
 scoreboard players set #config.force_hiders bh.multi 0
+
+#- Spectate Mode
+# 0 - Spectator Mode
+# 1* - Wandering Mode
+scoreboard players set #config.spectate_mode bh.multi 1
+
+

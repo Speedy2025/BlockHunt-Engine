@@ -18,7 +18,7 @@
 tag @s add bh.immune
 scoreboard players set @s bh.cooldown 7
 
-function bh:operations/misc/no_wander
+execute as @s[tag=bh.wanderer] run function bh:operations/misc/no_wander
 tag @s remove bh.wanderer.x
 
 execute unless entity @s[tag=bh.disguised] run function bh:operations/hit/damaged

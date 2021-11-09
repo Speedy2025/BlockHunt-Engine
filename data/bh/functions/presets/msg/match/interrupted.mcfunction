@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"Block Hunt","color":"green"},{"text":">> ","color":"dark_gray"},{"text":"You've joined in while there's a match already going. Please wait until the match ends."}]

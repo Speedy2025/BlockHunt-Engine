@@ -6,4 +6,4 @@ scoreboard players remove @a[scores={bh.cooldown=1..}] bh.cooldown 1
 tag @a remove bh.immune
 
 #H U N G E R
-effect give @a saturation 1 127 true
+effect give @a[tag=bh.ready] saturation 1 127 true

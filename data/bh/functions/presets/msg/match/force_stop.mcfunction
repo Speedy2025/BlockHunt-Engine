@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"Block Hunt","color":"green"},{"text":">> ","color":"dark_gray"},{"text":"Stoped the ongoing match of Block Hunt manually."}]
