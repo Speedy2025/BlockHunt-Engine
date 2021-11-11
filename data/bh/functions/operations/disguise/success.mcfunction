@@ -44,7 +44,7 @@ execute if score #rotation bh.multi matches -45..-1 run data modify entity @e[ta
 # Teleport and clean up
 execute positioned as @s anchored feet run tp @e[predicate=bh:id_match,type=armor_stand] ~ ~-0.7005 ~
 tag @e[tag=bh.as] remove bh.as
-effect give @s invisibility 999999 0 true
+effect give @s invisibility 1 0 true
 
 # Align if needed
 execute as @s if score @s bh.motion matches 50.. run function bh:operations/align_disguise
