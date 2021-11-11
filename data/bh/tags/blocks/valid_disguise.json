@@ -130,14 +130,6 @@
         "required": false
     },
     {
-        "id": "minecraft:chiseled_red_sandstone",
-        "required": false
-    },
-    {
-        "id": "minecraft:chiseled_sandstone",
-        "required": false
-    },
-    {
         "id": "minecraft:chiseled_stone_bricks",
         "required": false
     },
@@ -147,10 +139,6 @@
     },
     {
         "id": "minecraft:coal_ore",
-        "required": false
-    },
-    {
-        "id": "minecraft:cobblestone",
         "required": false
     },
     {
@@ -183,14 +171,6 @@
     },
     {
         "id": "minecraft:crying_obsidian",
-        "required": false
-    },
-    {
-        "id": "minecraft:cut_red_sandstone",
-        "required": false
-    },
-    {
-        "id": "minecraft:cut_sandstone",
         "required": false
     },
     {
@@ -594,14 +574,6 @@
         "required": false
     },
     {
-        "id": "minecraft:red_sand",
-        "required": false
-    },
-    {
-        "id": "minecraft:red_sandstone",
-        "required": false
-    },
-    {
         "id": "minecraft:red_terracotta",
         "required": false
     },
@@ -622,10 +594,6 @@
         "required": false
     },
     {
-        "id": "minecraft:sandstone",
-        "required": false
-    },
-    {
         "id": "minecraft:shroomlight",
         "required": false
     },
@@ -635,14 +603,6 @@
     },
     {
         "id": "minecraft:smooth_quartz",
-        "required": false
-    },
-    {
-        "id": "minecraft:smooth_red_sandstone",
-        "required": false
-    },
-    {
-        "id": "minecraft:smooth_sandstone",
         "required": false
     },
     {
@@ -915,14 +875,6 @@
     },
     {
         "id": "minecraft:crimson_stairs",
-        "required": false
-    },
-    {
-        "id": "minecraft:cut_red_sandstone_slab",
-        "required": false
-    },
-    {
-        "id": "minecraft:cut_sandstone_slab",
         "required": false
     },
     {

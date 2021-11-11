@@ -28,7 +28,7 @@ execute positioned ~ ~-1 ~ as @e[type=player,distance=0..1,tag=bh.hider,tag=!bh.
 execute align xyz positioned ~0.5 ~0.25 ~0.5 as @e[type=falling_block,distance=0..0.55] at @s run function bh:operations/hit/success
 
 # Next, check to see if the block is a wall.
-execute unless block ~ ~ ~ #bh:air align xyz positioned ~0.5 ~0.5 ~0.5 run function bh:operations/hit/failure
+execute unless block ~ ~ ~ #bh:passable align xyz positioned ~0.5 ~0.5 ~0.5 run function bh:operations/hit/failure
 
 
 # Next, check if it CAN'T continue to prevent a huge amount of fails

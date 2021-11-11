@@ -28,7 +28,7 @@ scoreboard players remove #ray bh.multi 1
 execute if block ~ ~ ~ #bh:valid_disguise align xyz positioned ~0.5 ~0.5 ~0.5 run function bh:operations/disguise/success
 
 # Next, check to see if the block is INVALID to disguise as.
-execute unless block ~ ~ ~ #bh:valid_disguise unless block ~ ~ ~ #bh:air align xyz positioned ~0.5 ~0.5 ~0.5 run function bh:operations/disguise/failure_invalid
+execute unless block ~ ~ ~ #bh:valid_disguise unless block ~ ~ ~ #bh:passable align xyz positioned ~0.5 ~0.5 ~0.5 run function bh:operations/disguise/failure_invalid
 
 
 # Next, check if it CAN'T continue to prevent a huge amount of fails
