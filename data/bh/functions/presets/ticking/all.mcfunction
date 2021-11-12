@@ -7,3 +7,4 @@ tag @a remove bh.immune
 
 #H U N G E R
 effect give @a[tag=bh.ready] saturation 1 127 true
+effect give @a[tag=bh.ready] resistance 1 127 true
