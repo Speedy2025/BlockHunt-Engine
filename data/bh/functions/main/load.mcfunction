@@ -30,6 +30,9 @@ scoreboard objectives add bh.x dummy [{"text":"bh.x","color":"blue"}]
 scoreboard objectives add bh.y dummy [{"text":"bh.y","color":"blue"}]
 scoreboard objectives add bh.z dummy [{"text":"bh.z","color":"blue"}]
 
+#> End ongoing matches
+execute if score #live bh.multi matches 1 run function bh:operations/end_match
+
 #> Preinitialization
 scoreboard players set #live bh.multi 0
 scoreboard players set #prev bh.multi 0

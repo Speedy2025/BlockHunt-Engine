@@ -26,7 +26,7 @@ scoreboard players operation #target bh.id = @s bh.id
 kill @e[predicate=bh:id_match,type=!player]
 
 # Now, spawn in the disguise far away because of mojank
-summon armor_stand 29999998 240 -29999964 {NoGravity:1b,Invisible:1b,Small:1b,Invulnerable:1b,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:bedrock"},NoGravity:1b,Time:-2147483648,Air:-2147483648,Tags:["bh.as,bh.disguise"]}],Tags:["bh.disguise"]}
+summon armor_stand 29999998 240 -29999964 {NoGravity:1b,Invisible:1b,Small:1b,Invulnerable:1b,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:bedrock"},NoGravity:1b,Time:-2147483648,Air:-2147483648,Tags:["bh.as","bh.disguise"]}],Tags:["bh.disguise"]}
 loot spawn 29999998 241 -29999964 mine ~ ~ ~ minecraft:netherite_pickaxe{Enchantments:[{id:"minecraft:silk_touch",lvl:1}]}
 execute positioned 29999998 241 -29999964 run data modify entity @e[tag=bh.as,limit=1] BlockState.Name set from entity @e[type=item,distance=0..2,limit=1] Item.id
 execute positioned 29999998 241 -29999964 run tp @e[type=item,distance=0..2] ~ -999 ~
