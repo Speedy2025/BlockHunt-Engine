@@ -19,12 +19,16 @@ execute if score #alive bh.multi matches 1.. if score #remaining_time bh.multi m
 execute if score #alive bh.multi matches 0 if score #remaining_time bh.multi matches 0 run function #bh:msg/match/everyone_loses
 execute if score #alive bh.multi matches 1.. if score #remaining_time bh.multi matches 1.. run function #bh:msg/match/force_stop
 
+kill @e[tag=bh.disguise]
+
 tag @a remove bh.seeker
 tag @a remove bh.hider
 tag @a remove bh.spectator
 tag @a remove bh.wanderer
 tag @a remove bh.ready
+tag @a remove bh.disguised
 
+scoreboard players reset @a bh.multi
 scoreboard players reset @a bh.motion
 
 scoreboard players set #live bh.multi 0
