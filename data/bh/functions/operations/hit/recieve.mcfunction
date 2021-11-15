@@ -16,7 +16,7 @@
 #   Expose the player or deal "damage" to 'em
 
 tag @s add bh.immune
-scoreboard players set @s bh.cooldown 7
+scoreboard players set @s bh.cooldown 30
 
 execute as @s[tag=bh.wanderer] run function bh:operations/misc/no_wander
 tag @s remove bh.wanderer.x

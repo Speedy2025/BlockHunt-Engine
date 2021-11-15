@@ -15,7 +15,7 @@
 #   Hitreg Correction
 
 scoreboard players set #ray bh.multi -1
-scoreboard players set @a[tag=bh.nohit] bh.cooldown 20
+scoreboard players set @a[tag=bh.nohit] bh.cooldown 80
 # debug msg
 
 scoreboard players operation #target bh.id = @s bh.id
