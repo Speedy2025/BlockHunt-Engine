@@ -1,6 +1,7 @@
 {
 	"description": "Non-air blocks whose collision box is not always 1x1x1, therefore including shulker boxes",
 	"values": [
+		"#bh:air",
 		"minecraft:acacia_button",
 		"minecraft:acacia_pressure_plate",
 		"minecraft:acacia_sapling",
