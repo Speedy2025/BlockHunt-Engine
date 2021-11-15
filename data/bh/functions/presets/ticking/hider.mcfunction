@@ -7,3 +7,5 @@ execute if score @s[tag=!bh.wanderer] bh.motion matches ..5 run function bh:oper
 # Align Disguises
 execute as @s[tag=!bh.wanderer] run function bh:operations/get_motion
 execute as @s[tag=!bh.wanderer] if score @s bh.motion >= #config.align_timer_min bh.multi if score @s bh.motion <= #config.align_timer_max bh.multi run function bh:operations/align_disguise
+
+effect give @s[tag=bh.disguised] minecraft:invisibility 1 0 true
