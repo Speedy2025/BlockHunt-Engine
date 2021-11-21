@@ -13,6 +13,11 @@
 # ?????????????????????????????????????????????????????
 # seeing an * at the end indicates the default value
 
+# Advanced people can take the config's tag (#bh:config) and
+# generate the config dynamically using theor own functions. 
+# Use this as a template to see what options are required. 
+# Not having these will likely break the datapack, so beware.
+
 #- Switch to Seeker on Hider Death
 # 0  - Eliminated to Spectator (Actual Spectator Mode)
 # 1* - Eliminated to Seeker
@@ -64,7 +69,7 @@ scoreboard players set #config.force_teams bh.multi 1
 #- If Force Control - Number of Seekers
 # 2* - Two Seekers
 # <#> - <#> Seekers
-scoreboard players set #config.force_seekers bh.multi 2
+scoreboard players set #config.force_seekers bh.multi 1
 
 #- If Force Control - Number of Hiders
 #->> Special Note: This creates a "limit" to players entering
