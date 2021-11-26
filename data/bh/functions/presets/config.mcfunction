@@ -84,4 +84,33 @@ scoreboard players set #config.force_hiders bh.multi 0
 # 1* - Wandering Mode
 scoreboard players set #config.spectate_mode bh.multi 1
 
+#- Hider Hit Protection Duration, in Ticks
+# 10* - 0.5s
+# <#> - Custom Protection <#>
+scoreboard players set #config.hider_protection bh.multi 10
+
+#- Seeker Hit Cooldown (Miss), in Ticks
+# 10* - 0.5s
+# <#> - Custom Cooldown <#>
+scoreboard players set #config.seeker_miss bh.multi 10
+
+#- Seeker Hit Cooldown (Hit), in Ticks
+# 30* - 1.5s
+# <#> - Custom Cooldown <#>
+scoreboard players set #config.seeker_hit bh.multi 30
+
+#- Hider Exposed Speed Duration, in Ticks (Minus 20)
+# 40* - 3s
+# <#> - Custom Duration <#>
+scoreboard players set #config.hider_speed bh.multi 40
+
+#- Hider Exposed Duration, in Ticks
+# 100* - 5s
+# <#> - Custom Duration <#>
+scoreboard players set #config.hider_exposure bh.multi 100
+
+#- Hider Mini-Exposed Duration, in Ticks
+# 20* - 1s
+# <#> - Custom Duration <#>
+scoreboard players set #config.hider_mini_exposure bh.multi 20
 
