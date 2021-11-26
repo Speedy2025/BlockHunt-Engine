@@ -31,4 +31,6 @@ effect clear @s
 function #bh:msg/hider/eliminated
 
 # Initiate Player
+execute if score #config.switch_teams bh.multi matches 0 run function #bh:init/spectator
 execute if score #config.switch_teams bh.multi matches 1 run function #bh:init/seeker
+execute if score #config.switch_teams bh.multi matches 2 run function #bh:init/wanderer

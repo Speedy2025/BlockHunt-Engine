@@ -14,8 +14,10 @@
 # Description:
 #   Puts player under exposed state
 effect clear @s minecraft:invisibility
-effect give @s minecraft:glowing 5 0 true
 kill @e[predicate=bh:id_match,type=!player]
-scoreboard players set @s bh.exposed 100
-effect give @s minecraft:speed 3 4 true
+scoreboard players operation @s bh.exposed = #config.hider_exposure bh.multi
 tag @s remove bh.disguised
+
+#To Customize
+effect give @s minecraft:glowing 5 0 true
+effect give @s minecraft:speed 3 4 true
