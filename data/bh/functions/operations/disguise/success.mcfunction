@@ -34,12 +34,12 @@ execute positioned 29999998 241 -29999964 as @e[type=falling_block,distance=0..1
 
 # Fix up the rotation.
 execute store result score #rotation bh.multi run data get entity @s Rotation[0]
-execute if score #rotation bh.multi matches 0..45 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "north"
-execute if score #rotation bh.multi matches 46..135 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "east"
-execute if score #rotation bh.multi matches 136..180 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "south"
-execute if score #rotation bh.multi matches -180..-136 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "south"
-execute if score #rotation bh.multi matches -135..-46 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "west"
-execute if score #rotation bh.multi matches -45..-1 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "north"
+execute if score #rotation bh.multi matches 0..45 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "south"
+execute if score #rotation bh.multi matches 46..135 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "west"
+execute if score #rotation bh.multi matches 136..180 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "north"
+execute if score #rotation bh.multi matches -180..-136 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "north"
+execute if score #rotation bh.multi matches -135..-46 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "east"
+execute if score #rotation bh.multi matches -45..-1 run data modify entity @e[tag=bh.as,limit=1] BlockState.Properties.facing set value "south"
 
 # Teleport and clean up
 execute positioned as @s anchored feet run tp @e[predicate=bh:id_match,type=armor_stand] ~ ~-0.7005 ~
