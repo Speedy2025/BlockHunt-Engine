@@ -9,3 +9,7 @@ execute as @s[tag=!bh.wanderer] run function bh:operations/get_motion
 execute as @s[tag=!bh.wanderer] if score @s bh.motion >= #config.align_timer_min bh.multi if score @s bh.motion <= #config.align_timer_max bh.multi run function bh:operations/align_disguise
 
 effect give @s[tag=bh.disguised] minecraft:invisibility 1 0 true
+
+#Exposure Effects
+effect give @s[scores={bh.exposed=1..}] minecraft:glowing 1 0 true
+effect give @s[scores={bh.exposed=60..}] minecraft:speed 1 4 true

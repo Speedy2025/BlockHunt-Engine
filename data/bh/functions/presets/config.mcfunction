@@ -101,11 +101,6 @@ scoreboard players set #config.seeker_miss bh.multi 10
 # <#> - Custom Cooldown <#>
 scoreboard players set #config.seeker_hit bh.multi 30
 
-#- Hider Exposed Speed Duration, in Ticks (Minus 20)
-# 40* - 3s
-# <#> - Custom Duration <#>
-scoreboard players set #config.hider_speed bh.multi 40
-
 #- Hider Exposed Duration, in Ticks
 # 100* - 5s
 # <#> - Custom Duration <#>
