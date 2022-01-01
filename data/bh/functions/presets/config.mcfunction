@@ -14,7 +14,7 @@
 # seeing an * at the end indicates the default value
 
 # Advanced people can take the config's tag (#bh:config) and
-# generate the config dynamically using theor own functions. 
+# generate the config dynamically using their own functions. 
 # Use this as a template to see what options are required. 
 # Not having these will likely break the datapack, so beware.
 
