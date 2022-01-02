@@ -24,5 +24,3 @@ scoreboard players operation @s bh.match = #match bh.multi
 
 execute if score #config.spectate_mode bh.multi matches 0 run tag @s add bh.spectator
 execute if score #config.spectate_mode bh.multi matches 1 run tag @s add bh.wanderer
-
-say pee
