@@ -35,7 +35,7 @@ function #bh:misc/bossbar
 
 #Next, set the bossbar to the configured time
 execute store result bossbar bh:match_timer max run scoreboard players get #config.match_timer bh.multi
-execute store result bossbar bh:match_timer max run scoreboard players get #remaining_time bh.multi
+execute store result bossbar bh:match_timer value run scoreboard players get #remaining_time bh.multi
 bossbar set bh:match_timer players @a[tag=bh.ready]
 
 #Bossbar is set up, now to move everyone to the starting positions
