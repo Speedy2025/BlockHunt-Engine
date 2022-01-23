@@ -8,3 +8,5 @@ tag @a remove bh.immune
 #Non-manditory, but recommended
 effect give @a[tag=bh.ready] saturation 1 127 true
 effect give @a[tag=bh.ready] resistance 1 127 true
+
+tag @a[tag=bh.ready] add se.disable.all

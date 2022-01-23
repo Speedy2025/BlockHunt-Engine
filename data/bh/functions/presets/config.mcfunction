@@ -18,6 +18,11 @@
 # Use this as a template to see what options are required. 
 # Not having these will likely break the datapack, so beware.
 
+#> Personal Edit of Config File - Allow for Multiple Maps
+scoreboard players set #selected_map bh.multi 2
+execute in tser_dim:night_mg if predicate bh:chance run function bh:presets/personal/small_map
+execute in tser_dim:night_mg if score #selected_map bh.multi matches 2 run function bh:presets/personal/big_map
+
 #- Switch to Seeker on Hider Death
 # 0  - Eliminated to Spectator (Actual Spectator Mode)
 # 1* - Eliminated to Seeker
@@ -32,7 +37,8 @@ scoreboard players set #config.allow_wander bh.multi 1
 #- Maximum Time per Match, in Ticks
 # 12,000* - 10 Minutes
 # <#> - Custom Time
-scoreboard players set #config.match_timer bh.multi 12000
+execute if score #selected_map bh.multi matches 1 run scoreboard players set #config.match_timer bh.multi 12000
+execute if score #selected_map bh.multi matches 2 run scoreboard players set #config.match_timer bh.multi 18000
 
 #- Disguise alignment Range, in Ticks
 #->> Special Note: it's important to make this a range to prevent issues with lag
@@ -44,7 +50,8 @@ scoreboard players set #config.align_timer_max bh.multi 100
 #- Seeker Blindfolded Time
 # 600* - 30 Seconds
 # <#> - Custom Blindfold Time
-scoreboard players set #config.seeker_blindfold bh.multi 600
+execute if score #selected_map bh.multi matches 1 run scoreboard players set #config.seeker_blindfold bh.multi 600
+execute if score #selected_map bh.multi matches 2 run scoreboard players set #config.seeker_blindfold bh.multi 900
 
 #- Max Seeker Hit Range, in 0.2 block steps
 # 41* - 8 blocks
