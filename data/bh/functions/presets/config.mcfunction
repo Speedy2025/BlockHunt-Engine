@@ -101,7 +101,7 @@ scoreboard players set #config.hider_protection bh.multi 15
 #- Seeker Hit Cooldown (Miss), in Ticks
 # 10* - 0.5s
 # <#> - Custom Cooldown <#>
-scoreboard players set #config.seeker_miss bh.multi 10
+scoreboard players set #config.seeker_miss bh.multi 3
 
 #- Seeker Hit Cooldown (Hit), in Ticks
 # 30* - 1.5s
@@ -111,10 +111,10 @@ scoreboard players set #config.seeker_hit bh.multi 30
 #- Hider Exposed Duration, in Ticks
 # 100* - 5s
 # <#> - Custom Duration <#>
-scoreboard players set #config.hider_exposure bh.multi 100
+scoreboard players set #config.hider_exposure bh.multi 200
 
 #- Hider Mini-Exposed Duration, in Ticks
 # 20* - 1s
 # <#> - Custom Duration <#>
-scoreboard players set #config.hider_mini_exposure bh.multi 20
+scoreboard players set #config.hider_mini_exposure bh.multi 50
 

@@ -12,4 +12,5 @@ effect give @s[tag=bh.disguised] minecraft:invisibility 1 0 true
 
 #Exposure Effects
 effect give @s[scores={bh.exposed=1..}] minecraft:glowing 1 0 true
-effect give @s[scores={bh.exposed=60..}] minecraft:speed 1 4 true
+effect give @s[scores={bh.exposed=160..}] minecraft:speed 1 3 true
+# Increased time out of boost
