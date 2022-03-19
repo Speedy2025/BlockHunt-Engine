@@ -33,10 +33,10 @@ execute if score #blinded bh.blinded matches -50..0 run scoreboard players set #
 
 #you RUDELY interrupted my match :(
 # go to timeout
-execute as @a[tag=bh.hider] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
-execute as @a[tag=bh.seeker] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
-execute as @a[tag=bh.spectator] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
-execute as @a[tag=bh.wanderer] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
+#execute as @a[tag=bh.hider] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
+#execute as @a[tag=bh.seeker] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
+#execute as @a[tag=bh.spectator] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
+#execute as @a[tag=bh.wanderer] unless score @s bh.match = #match bh.multi run function bh:operations/interrupted_match
 
 #End the match if a condition is true
 # check if the match is live to prevent duplicating the end_match
