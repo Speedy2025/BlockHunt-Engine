@@ -35,6 +35,7 @@ execute if score #live bh.multi matches 1 run function bh:operations/end_match
 
 #> Preinitialization
 scoreboard players set #live bh.multi 0
+execute unless score #match bh.multi matches 1.. run scoreboard players set #match bh.multi 1
 scoreboard players set #prev bh.multi 0
 scoreboard players set #CONST.2 bh.multi 2
 scoreboard players set #CONST.20 bh.multi 20

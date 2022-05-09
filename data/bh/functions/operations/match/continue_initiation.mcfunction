@@ -60,11 +60,7 @@ execute as @a[tag=bh.wanderer] run function #bh:init/wanderer
 scoreboard players set #alive bh.multi 0
 execute as @a[tag=bh.hider] run scoreboard players add #alive bh.multi 1
 
-scoreboard players operation @a[tag=bh.seeker] bh.match = #match bh.multi
-scoreboard players operation @a[tag=bh.hider] bh.match = #match bh.multi
-scoreboard players operation @a[tag=bh.spectator] bh.match = #match bh.multi
-scoreboard players operation @a[tag=bh.wanderer] bh.match = #match bh.multi
-
+scoreboard players operation @a[tag=bh.ready] bh.match = #match bh.multi
 #We're done! Time to let the DP know we are.
 gamerule reducedDebugInfo true
 scoreboard players set #prev bh.multi 1

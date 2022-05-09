@@ -19,6 +19,7 @@ tag @s remove bh.seeker
 tag @s remove bh.hider
 tag @s remove bh.spectator
 tag @s remove bh.wanderer
+tag @s remove bh.ready
 
 scoreboard players operation @s bh.match = #match bh.multi
 

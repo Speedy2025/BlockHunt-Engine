@@ -16,4 +16,4 @@
 
 # Store for check
 scoreboard players operation #target bh.id = @s bh.id
-execute unless entity @a[predicate=bh:id_match] run kill @e[predicate=bh:id_match]
+execute unless entity @a[predicate=bh:id_match,tag=bh.hider] run kill @e[predicate=bh:id_match]
