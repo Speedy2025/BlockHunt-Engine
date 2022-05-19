@@ -41,6 +41,13 @@ scoreboard players set #config.match_timer bh.multi 12000
 scoreboard players set #config.align_timer_min bh.multi 50
 scoreboard players set #config.align_timer_max bh.multi 100
 
+#- Freeze Disguise Timer, in Ticks
+#->> Special Note: you should make this significantly less than #config.align_timer_min
+#->>   to prevent a bug where the timer resets (???????)
+# 5* - Stops teleporting disguises after being still 0.25s
+# <#> - Custom Stillness time
+scoreboard players set #config.freeze_disguise bh.multi 5
+
 #- Seeker Blindfolded Time
 # 600* - 30 Seconds
 # <#> - Custom Blindfold Time
@@ -69,7 +76,7 @@ scoreboard players set #config.force_teams bh.multi 1
 #- If Force Control - Number of Seekers
 # 2* - Two Seekers
 # <#> - <#> Seekers
-scoreboard players set #config.force_seekers bh.multi 1
+scoreboard players set #config.force_seekers bh.multi 2
 
 #- If Force Control - Number of Hiders
 #->> Special Note: This creates a "limit" to players entering

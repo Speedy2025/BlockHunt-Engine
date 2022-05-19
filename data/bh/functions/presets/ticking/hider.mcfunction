@@ -1,5 +1,5 @@
 # Teleport Hider Disguises
-execute if score @s[tag=!bh.wanderer] bh.motion matches ..5 run function bh:operations/teleport_disguise
+execute if score @s[tag=!bh.wanderer] bh.motion < #config.freeze_disguise bh.multi run function bh:operations/teleport_disguise
 #Side note: this ends earlier than I align to save on performance (negligable)
 #   and to *sometimes* prevent a bug where motion resets to 0
 #   note the *sometimes*, this doesn't prevent it in all cases
