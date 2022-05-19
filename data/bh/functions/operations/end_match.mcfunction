@@ -1,9 +1,9 @@
 ################
-# Update Match #
+# End Match #
 ################
 
 # Calls:
-#   - <nothing>
+#   - #bh:misc/end_match
 #
 # Called by:
 #   - bh:live/tick
@@ -14,12 +14,7 @@
 # Description:
 #   Updates the match
 
-execute if score #alive bh.multi matches 0 if score #remaining_time bh.multi matches 1.. run function #bh:msg/match/seekers_win
-execute if score #alive bh.multi matches 1.. if score #remaining_time bh.multi matches 0 run function #bh:msg/match/hiders_win
-execute if score #alive bh.multi matches -1..0 if score #remaining_time bh.multi matches 0 run function #bh:msg/match/everyone_loses
-execute if score #alive bh.multi matches 0 if score #remaining_time bh.multi matches 0 run function #bh:msg/match/everyone_loses
-execute if score #alive bh.multi matches 1.. if score #remaining_time bh.multi matches 1.. run function #bh:msg/match/force_stop
-execute if score #alive bh.multi matches -1 if score #remaining_time bh.multi matches 1.. run function #bh:msg/match/seekers_forfeit
+function #bh:misc/end_match
 
 kill @e[tag=bh.disguise]
 
