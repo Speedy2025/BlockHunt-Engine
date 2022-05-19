@@ -33,6 +33,7 @@ A full list of things you can configure from the config file includes...
 * Allowing Wandering
 * Duration of Matches
 * Time before Disguise Alignment
+* Time before Disguises stop Teleporting
 * Duration of Blindfold 
 * Seeker Hit Range
 * Hider Disguise Range
@@ -87,4 +88,37 @@ Once you've set up who's playing and everyone's in the game, set `#live bh.multi
 Good luck! May the best hiders/seekers win.
 
 ## Mechanics
-_Coming soon_
+
+**THIS IS A DRAFT, THINGS WILL CHANGE**
+Playing the game consists of moving around, using with the carrot on a stick, and crouching. No controls, unless modified, will affect things. I will discuss everything in depth here with a short "how to play..." in the beginning. Also keep in mind that this assumes default settings.
+
+
+**DISCLAIMER: When I mention "use", I mean right click. You do not punch or attack anything to play this game.**
+
+### ... As a seeker
+As a seeker, your goal is to eliminate hiders. You can use (typically right click) the carrot on a stick to check blocks for hiders. There is a short, configurable cooldown between checks. If the block you check is actually a hider, they will appear and begin to glow. They also will get a speed boost. Keep in mind that you must now hit them twice, also configurable, before they're eliminated, not including the initial check.
+
+For those who do not want to read a wall of text,
+* Right click with carrot on a stick to check block you are looking at
+* Right click with carrot on a stick while looking at hiders to damage them
+* Right click with carrot on a stick while looking at damaged hiders to win
+
+### ... As a hider
+As a hider, your goal is to not be discovered and/or survive long enough to stay a hider. To start, find a block you want to hide as. If it is a valid block, use (typically right click) the carrot on a stick to disguise as it. Quickly go to whereever you wish to hide and stand still. After a few moments, you're block will align and you will be given the option to "wander". Shift and use the carrot on a stick at the same time to be released from your block. Your block will stay behind but you'll be able to walk around. To return to the block, shift and use your carrot on a stick.
+
+For those who do not want to read a wall of text,
+* Right click with carrot on a stick to disguise as the block you're looking at
+* Stand still for a little bit to look normal
+* After standing still for a little bit, shift and right click with carrot on a stick to wander
+* Shift and right click with carrot on a stick to stop wandering if you are wandering
+* Don't get found to win
+
+*Tip:  Don't hold your carrot on a stick unless you're actively using it. It can be seen by everyone.*
+
+### Advanced Seeker
+amogus
+
+### Advanced Hider
+minecraft
+
+man it isn't as catchy...
